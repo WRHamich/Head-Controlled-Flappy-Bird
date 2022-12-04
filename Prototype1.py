@@ -1,10 +1,10 @@
-# Flappy Bird Computer Vision Project
+# Flappy Bird with Computer Vision Project
 
 """Importing the required Libraries"""
 
 import sys  # to manipulate different parts of the Python runtime environment
 import time  # For Time
-import random  # For Random values
+import random  # For Random values we need that for Pipes
 import pygame  # For Python games
 import cv2 as cv  # For Computer Vision
 import mediapipe  # face detection
@@ -118,8 +118,9 @@ class Flappy_Game:
         self.game_settings()
 
         """Facial Recognition"""
-        """MediaPipe Face Mesh is a solution that estimates 468 3D face landmarks in
+        """MediaPipe Face Mesh is a solution that  estimates 468 3D face landmarks in
          accurately around lips, eyes and irises"""
+
 
         with mp_face_mesh.FaceMesh(max_num_faces=1, refine_landmarks=True, min_detection_confidence=0.5,
                                    min_tracking_confidence=0.5) as face_mesh:
