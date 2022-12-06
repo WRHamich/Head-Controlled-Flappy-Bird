@@ -1,5 +1,6 @@
 # Flappy Bird with Computer Vision Project
 
+#Waleed Hamich
 """Importing the required Libraries"""
 
 import sys  # to manipulate different parts of the Python runtime environment
